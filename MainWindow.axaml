@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="demo0312.MainWindow"
+        Title="demo0312">
+	<Grid
+		RowDefinitions="200,400,*">
+		<StackPanel
+			Grid.Row="0">
+			<Button
+				Content="Гость"
+				Click="Guest_Click">
+			</Button>
+
+		</StackPanel>
+		<StackPanel
+			HorizontalAlignment="Center"
+			Grid.Row="1">
+			<TextBlock
+				HorizontalAlignment="Center"
+			Text="Вход">
+			</TextBlock>
+			<TextBox
+				Name="login"
+				Watermark="Логин"
+				Width="200">
+
+			</TextBox>
+			<TextBox
+				Name="passwd"
+				Watermark="Пароль"
+				Width="200">
+
+			</TextBox>
+			<StackPanel
+				HorizontalAlignment="Center"
+				Orientation="Horizontal">
+				<Button
+					Click="Button_Click"
+					HorizontalAlignment="Center"
+					Content="Войти">
+				</Button>
+				<Button
+					Content="Регистрация"
+					Click="Reg_Click">
+				</Button>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Window>
